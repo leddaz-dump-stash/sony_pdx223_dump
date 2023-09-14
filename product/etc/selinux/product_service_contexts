@@ -1,0 +1,16 @@
+#line 1 "device/somc/sepolicy/private/service_contexts"
+# Application Framework
+# Automatic Brightness Control
+power_extention                           u:object_r:power_extention_service:s0
+
+mirror_power_save                         u:object_r:lcd_power_save_service:s0
+
+# SOMC Smart Network
+sne_wifi_scan                             u:object_r:sne_wifi_scan_service:s0
+
+# SOMC Telephony Extension Service
+ext_telephony_service_impl                u:object_r:ext_telephony_service_server:s0
+
+#SuperStamina
+xperia_power_service                      u:object_r:xperia_power_service:s0
+

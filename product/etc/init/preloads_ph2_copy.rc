@@ -1,0 +1,12 @@
+# Copyright 2021 Sony Corporation
+#
+# This is script for triggering preloads copying from _other partition.
+
+
+on property:sys.cppreopt=request_ph2
+    # Add support for preload content on /oem
+    mount_all /product/etc/oem_fstab.postinstall
+    exec - system system -- /system/bin/preloads_copy.sh /postinstall
+    umount_all /product/etc/oem_fstab.postinstall
+    setprop sys.cppreopt finished
+    setprop persist.somc.cust.preloaded_media requested

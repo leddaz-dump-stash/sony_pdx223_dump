@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright (C) 2016 Sony Mobile Communications Inc.
+   All rights, including trade secret rights, reserved.
+-->
+<preferred-activities>
+    <item name="com.android.contacts/.activities.PeopleActivity">
+        <filter>
+            <action name="android.intent.action.MAIN" />
+            <cat name="android.intent.category.APP_CONTACTS" />
+            <cat name="android.intent.category.DEFAULT" />
+        </filter>
+    </item>
+</preferred-activities>

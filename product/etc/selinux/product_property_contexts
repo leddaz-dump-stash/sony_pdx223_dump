@@ -1,0 +1,124 @@
+#line 1 "device/qcom/sepolicy/generic/product/private/property_contexts"
+# Copyright (c) 2019-2020 The Linux Foundation. All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are
+# met:
+#     * Redistributions of source code must retain the above copyright
+#       notice, this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above
+#       copyright notice, this list of conditions and the following
+#       disclaimer in the documentation and/or other materials provided
+#       with the distribution.
+#     * Neither the name of The Linux Foundation nor the names of its
+#       contributors may be used to endorse or promote products derived
+#       from this software without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+# ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+# BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+# SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+# BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+# OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+# IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+vendor.display.disable_rounded_corner       u:object_r:vendor_display_notch_prop:s0
+vendor.qvirtmgr.                            u:object_r:vendor_qvirtmgr_prop:s0
+#line 1 "device/somc/sepolicy/private/property_contexts"
+# Game Enhancer
+sys.enable.doze_mode u:object_r:ge_doze_mode_prop:s0
+sys.enable.jitter_filter u:object_r:ge_jitter_filter_prop:s0
+sys.enable_grip_rejection u:object_r:ge_grip_rejection_prop:s0
+sys.rejection_area u:object_r:ge_rejection_area_prop:s0
+sys.floatingui u:object_r:ge_sys_floatingui_prop:s0
+
+# IDD property_contexts
+prop_data_disclaimer_data u:object_r:data_disclaimer_prop:s0
+
+# DeviceMonitor Property contexts
+devicemonitor.init u:object_r:devicemonitor_prop:s0
+devicemonitor.screen_on_rsn u:object_r:devicemonitor_prop:s0
+
+# Display
+sys.enable.smart_on_doze u:object_r:display_smart_on_doze_prop:s0
+sys.preactivated.smart_on_display u:object_r:display_smart_on_prop:s0
+sys.enable.smart_on_display u:object_r:display_smart_on_prop:s0
+persist.service.xrfm.mode u:object_r:display_xrfm_prop:s0
+sony.screen_brightness     u:object_r:display_brightness_prop:s0
+
+# Customization Team
+persist.somc.cust.              u:object_r:cust_system_prop:s0
+somc.cust.                      u:object_r:cust_debug_system_prop:s0
+
+# Bootstrap - updatemiscta
+semc.version.                  u:object_r:semc_version_prop:s0
+persist.tareset.notfirstboot   u:object_r:tareset_notfirstboot_prop:s0
+
+# Bootstrap - taimport
+ro.bootstrap.use_color_prof     u:object_r:semc_use_color_prof_prop:s0
+ro.sony.color_id                u:object_r:sony_colorid_prop:s0
+ro.device.color.prof            u:object_r:device_color_prof_prop:s0
+init.taimport.ready             u:object_r:taimport_prop:s0
+ro.somc.sony_product_code       u:object_r:somc_sony_product_code_prop:s0
+ro.somc.customerid2             u:object_r:somc_customerid_prop:s0
+
+# Bootstrap - usbeng
+persist.usb.eng                 u:object_r:usb_eng_prop:s0
+sys.usb.diag_mode               u:object_r:usb_diag_mode_prop:s0
+persist.sys.usb.config          u:object_r:usbeng_config_prop:s0
+persist.service.adb.enable      u:object_r:usb_adb_enable_prop:s0
+
+# PiP
+vendor.pip.firewall.ctl u:object_r:vendor_pip_prop:s0
+
+# Photos Extension
+oem_trusted_authority   u:object_r:media_extension_prop:s0
+oem_trusted_certificate u:object_r:media_extension_prop:s0
+
+# CrashLevel
+persist.sys.semc.crashlevel u:object_r:somc_crashlevel_prop:s0
+
+# CrashMonitor rollback status
+persist.somc.rollback_session.status u:object_r:rollback_status_prop:s0
+
+# Aes Entitlement status
+persist.radio.aes. u:object_r:aes_entitlement_status_prop:s0
+persist.radio.volte. u:object_r:aes_entitlement_status_prop:s0
+persist.radio.vowifi. u:object_r:aes_entitlement_status_prop:s0
+persist.radio.smsoip. u:object_r:aes_entitlement_status_prop:s0
+
+# recovery UI property
+ro.recovery-ui u:object_r:exported_default_prop:s0 exact string
+
+# Bluetooth: AAC ABR sony devices detection
+persist.bluetooth.bluetooth_audio_hal.is_sony_device  u:object_r:bluetooth_audio_hal_prop:s0
+
+#360RA
+threesixtyra.upmix.auto.video                   u:object_r:threesixtyra_config_prop:s0
+
+# Thermal powerSaveModule
+ro.sys.thermal.incoming_call            u:object_r:somc_thermal_platform_prop:s0 exact string
+ro.sys.thermal.notify_chargeoff         u:object_r:somc_thermal_platform_prop:s0 exact string
+ro.sys.thermal.notify_iec_notification  u:object_r:somc_thermal_platform_prop:s0 exact string
+ro.sys.thermal.notify_not_auto_dismiss  u:object_r:somc_thermal_platform_prop:s0 exact string
+ro.sys.thermal.notify_5g_notification   u:object_r:somc_thermal_platform_prop:s0 exact string
+
+# Lockscreen - fingerprint sensor mode
+persist.vendor.fingerprint.timing.unlockscreen  u:object_r:vendor_fingerprint_timing_prop:s0
+
+# Gaming Fan Service
+persist.gamingfanservice. u:object_r:gaming_fan_prop:s0
+
+# Restrict access to starting postdumper
+ctl.start$postdumper u:object_r:ctl_postdumper_prop:s0
+
+# lmkd memory tuning
+ro.lmk.critical_available_threshold                            u:object_r:lmkd_config_prop:s0 exact int
+persist.device_config.lmkd_native.critical_available_threshold u:object_r:lmkd_config_prop:s0 exact int
+
+# Nativedumper package info update property
+vendor.crashdump.packageinfo u:object_r:vendor_crashdump_progress_prop:s0
+

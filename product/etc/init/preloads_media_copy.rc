@@ -1,0 +1,18 @@
+# Copyright 2021 Sony Corporation
+#
+# This is script for triggering preloads media copying from _other partition.
+
+on property:persist.somc.cust.preloaded_media=requested \
+        && property:sys.user.0.ce_available=true
+    # Create target folder
+    mkdir /data/preloads/file_cache 0755 system system
+    mkdir /data/preloads/file_cache/deletable_media 0755 system system
+    # Add support for preload media on /system
+    mount_all /product/etc/fstab.postinstall
+    exec - system system -- /product/bin/preloads_media_copy.sh /postinstall
+    umount_all /product/etc/fstab.postinstall
+    # Add support for preload media on /oem
+    mount_all /product/etc/oem_fstab.postinstall
+    exec - system system -- /product/bin/preloads_media_copy.sh /postinstall
+    umount_all /product/etc/oem_fstab.postinstall
+    setprop persist.somc.cust.preloaded_media finished

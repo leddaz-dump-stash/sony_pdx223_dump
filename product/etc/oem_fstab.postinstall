@@ -1,0 +1,6 @@
+# Copyright 2021 Sony Corporation
+# All rights, including trade secret rights, reserved
+
+# Tries to mount oem_other partition with avb keys.
+#<src>                    <mnt_point>  <type> <mnt_flags and options> <fs_mgr_flags>
+/dev/block/bootdevice/by-name/oem /postinstall ext4   ro,nosuid,nodev,noexec,context=u:object_r:postinstall_mnt_dir:s0  slotselect_other

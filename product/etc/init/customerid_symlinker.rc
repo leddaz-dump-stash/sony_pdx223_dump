@@ -1,0 +1,13 @@
+# set up symbolic links to proper configuration file
+service customerid-symlinker /product/bin/customerid_symlinker.sh /oem
+    class main
+    user system
+    group system
+    disabled
+    oneshot
+
+# Note! that there is a dependency towards taimport property
+# the property is set immediatly after execution of taimport.
+on property:init.taimport.ready=true
+    mkdir /data/customization 0755 system system
+    start customerid-symlinker
