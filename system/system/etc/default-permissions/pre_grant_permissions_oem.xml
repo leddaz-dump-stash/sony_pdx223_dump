@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2016, 2022 Sony Corporation
+ -->
+<!--
+    An example of pre-grant list is following:
+
+      <exceptions>
+         <exception package="com.example.a">
+            <permission name="android.permission.BODY_SENSORS" fixed="false"/>
+         </exception>
+         <exception package="com.example.b">
+            <permission name="android.permission.BODY_SENSORS" fixed="true"/>
+            <permission name="android.permission.READ_CALENDAR" fixed="false"/>
+            <permission name="android.permission.WRITE_CALENDAR" fixed="false"/>
+         </exception>
+      </exceptions>
+
+
+    The xml format of pre-grant list is following:
+
+     - <exceptions>
+        - It represents list of <exception>
+        - It contains some <exception>
+
+     - <exception package="***">
+        - It represents a setting about one package that wanted to apply pre-grant processing
+        - It contains some <permission>
+
+        - [package] attribute represents the package name
+           Value : [string]
+
+     - <permission name="***" fixed="***">
+        - It represents a setting about one permission that is pre-granted for the package of
+          <exception>
+
+        - [name] attribute represents the permission name
+           Value : [string]
+
+        - [fixed] attribute represents a flag for systemFixed setting of the permission
+           Value : [true, false]
+
+           true set the permission systemFixed, false does not set the permission systemFixed.
+           In case of systemfixed is not defined does not set the permission systemFixed.
+
+
+    The pre-grant processing behavior in the above example is described following:
+
+     - Package com.example.a
+        - The following permission is pre-granted:
+           - android.permission.BODY_SENSORS   (Not set as systemFixed)
+
+          User can change the granting state of com.example.a's BODY_SENSORS permission in UI.
+          In this case, The following permission group can be changed in UI:
+           - Body Sensors
+
+     - Package com.example.b
+        - The following permission are pre-granted:
+           - android.permission.BODY_SENSORS   (Set as systemFixed)
+           - android.permission.READ_CALENDAR  (Not set as systemFixed)
+           - android.permission.WRITE_CALENDAR (Not set as systemFixed)
+
+          User can not change the granting state of com.example.b's BODY_SENSORS permission in UI.
+          And, User can change the granting state of com.example.b's READ_CALENDAR permission and
+          WRITE_CALENDAR permission in UI.
+          In this case, the following permission group can be changed in UI:
+           - Calendar
+ -->
+
+<exceptions>
+  <!-- For docomo -->
+  <exception package="jp.co.nttdocomo.lcsapp">
+    <permission name="android.permission.READ_PHONE_NUMBERS" fixed="true"/>
+    <permission name="android.permission.READ_PHONE_STATE" fixed="true"/>
+    <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="true"/>
+    <permission name="android.permission.ACCESS_BACKGROUND_LOCATION" fixed="true"/>
+  </exception>
+  <exception package="com.nttdocomo.android.networkservice">
+    <permission name="android.permission.CALL_PHONE" fixed="false"/>
+  </exception>
+  <exception package="com.facebook.appmanager">
+    <permission name="android.permission.POST_NOTIFICATIONS" fixed="false"/>
+  </exception>
+  <exception package="com.nttdocomo.android.remotelock">
+    <permission name="android.permission.POST_NOTIFICATIONS" fixed="false"/>
+  </exception>
+  <exception package="com.nttdocomo.android.mascot">
+    <permission name="android.permission.POST_NOTIFICATIONS" fixed="false"/>
+  </exception>
+  <exception package="com.nttdocomo.android.anshinsecurity">
+    <permission name="android.permission.POST_NOTIFICATIONS" fixed="false"/>
+  </exception>
+  <exception package="com.nttdocomo.android.idmanager">
+    <permission name="android.permission.POST_NOTIFICATIONS" fixed="false"/>
+  </exception>
+  <exception package="com.nttdocomo.android.applicationmanager">
+    <permission name="android.permission.POST_NOTIFICATIONS" fixed="false"/>
+  </exception>
+  <exception package="com.nttdocomo.android.devicehelp">
+    <permission name="android.permission.POST_NOTIFICATIONS" fixed="false"/>
+  </exception>
+  <exception package="jp.co.nttdocomo.carriermail">
+    <permission name="android.permission.POST_NOTIFICATIONS" fixed="false"/>
+  </exception>
+  <exception package="com.sonymobile.supplementallyservice.dcm">
+    <permission name="android.permission.RECEIVE_SMS" fixed="false"/>
+    <permission name="android.permission.WRITE_CALL_LOG" fixed="false"/>
+  </exception>
+
+  <!-- For kddi -->
+  <exception package="com.aura.oobe.kddi">
+    <permission name="android.permission.POST_NOTIFICATIONS" fixed="false"/>
+  </exception>
+  <exception package="com.kddi.cs.app001">
+    <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="false"/>
+    <permission name="android.permission.READ_PHONE_STATE" fixed="false"/>
+  </exception>
+
+  <!-- Common -->
+  <exception package="com.sonymobile.providers.media">
+    <permission name="android.permission.READ_MEDIA_IMAGES" fixed="false"/>
+    <permission name="android.permission.READ_MEDIA_VIDEO" fixed="false"/>
+  </exception>
+
+ <!-- For MLC -->
+  <exception package="com.baidu.map.location">
+    <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="true"/>
+    <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="true"/>
+    <permission name="android.permission.ACCESS_BACKGROUND_LOCATION" fixed="true"/>
+  </exception>
+
+  <!-- For Meizu Voice Assistant Aicy Voice -->
+  <exception package="com.fm.voiceassistant.sony">
+    <permission name="android.permission.RECORD_AUDIO" fixed="false"/>
+    <permission name="android.permission.READ_PHONE_STATE" fixed="false"/>
+    <permission name="android.permission.READ_CALENDAR" fixed="false"/>
+    <permission name="android.permission.WRITE_CALENDAR" fixed="false"/>
+    <permission name="android.permission.READ_CONTACTS" fixed="false"/>
+    <permission name="android.permission.CALL_PHONE" fixed="false"/>
+    <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="false"/>
+    <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false"/>
+    <permission name="android.permission.READ_SMS" fixed="false"/>
+    <permission name="android.permission.SEND_SMS" fixed="false"/>
+  </exception>
+
+  <!-- For Meizu Aicy Glance -->
+  <exception package="com.meizu.assistant">
+    <permission name="android.permission.RECEIVE_SMS" fixed="false"/>
+    <permission name="android.permission.READ_SMS" fixed="false"/>
+  </exception>
+
+  <!-- For Meizu Security Center-->
+  <exception package="com.fm.safe.sony">
+    <permission name="android.permission.GET_ACCOUNTS" fixed="false"/>
+    <permission name="android.permission.READ_CALL_LOG" fixed="false"/>
+    <permission name="android.permission.READ_PHONE_STATE" fixed="false"/>
+    <permission name="android.permission.READ_CONTACTS" fixed="false"/>
+    <permission name="android.permission.READ_SMS" fixed="false"/>
+    <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="false"/>
+    <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false"/>
+    <permission name="android.permission.ACCESS_BACKGROUND_LOCATION" fixed="false"/>
+  </exception>
+
+  <!-- For Orange -->
+  <exception package="com.orange.aura.oobe">
+    <permission name="android.permission.POST_NOTIFICATIONS" whitelisted="true"/>
+  </exception>
+  <exception package="com.orange.update">
+    <permission name="android.permission.POST_NOTIFICATIONS" whitelisted="true"/>
+  </exception>
+
+  <!-- For UPS -->
+  <exception package="com.sonymobile.ups">
+    <permission name="android.permission.POST_NOTIFICATIONS" fixed="true"/>
+  </exception>
+
+  <!-- For Game enhancer -->
+   <exception package="com.sonymobile.gameenhancer">
+     <permission name="android.permission.ANSWER_PHONE_CALLS" fixed="false"/>
+   </exception>
+
+  <!-- For UpdateCenter Notification -->
+  <exception package="com.sonyericsson.updatecenter">
+    <permission name="android.permission.POST_NOTIFICATIONS" fixed="true"/>
+  </exception>
+
+  <!-- For Telephony -->
+   <exception package="com.sonyericsson.android.omacp">
+     <permission name="android.permission.RECEIVE_WAP_PUSH" fixed="false"/>
+   </exception>
+
+  <exception package="com.android.deskclock">
+    <!-- Notifications -->
+    <permission name="android.permission.POST_NOTIFICATIONS" fixed="false"/>
+  </exception>
+</exceptions>

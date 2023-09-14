@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2021 Sony Corporation
+-->
+
+<permissions>
+    <privapp-permissions package="com.android.server.telecom">
+        <permission name="android.permission.CONTROL_INCALL_EXPERIENCE"/>
+        <permission name="com.android.voicemail.permission.READ_VOICEMAIL"/>
+        <permission name="com.android.voicemail.permission.WRITE_VOICEMAIL"/>
+    </privapp-permissions>
+</permissions>
