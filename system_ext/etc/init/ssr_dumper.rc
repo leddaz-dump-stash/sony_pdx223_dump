@@ -1,0 +1,9 @@
+on early-boot
+    # Init subsystem restart level script
+    exec u:r:ssr_level:s0 -- /system/bin/sh /system_ext/etc/init.ssr_level.sh
+
+service ssr_dumper /system_ext/bin/ssr_dumper
+    class main
+    user root
+    group root system
+    seclabel u:r:ssr_dumper:s0

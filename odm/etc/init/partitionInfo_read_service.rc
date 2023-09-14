@@ -1,0 +1,7 @@
+#
+# Copyright 2021 Sony Corporation
+#
+
+on property:sys.boot_completed=1
+    exec - system net_bt -- /odm/bin/partitionInfo_read_service.sh
+

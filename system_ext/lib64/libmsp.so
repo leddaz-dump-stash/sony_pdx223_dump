@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title>
+snapdragon-premium-high-2021-spf-2-0_amss_standard_oem/LA.QSSI.13.0/LINUX/android/vendor/qcom/proprietary/prebuilt_HY11/target/product/qssi/system_ext/lib64/libmsp.so at r2.0.r1_00018.0.531685.0.566789.0 - sony-mobile-communications-inc / snapdragon-premium-high-2021-spf-2-0_amss_standard_oem | 
+ChipCode
+</title>
+<link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-dac4357df29ba530a1a4cbd70ef5173cd0608113ce4d4b9a4aba6738c12aaa29.ico" />
+<link rel="stylesheet" media="all" href="/assets/application-4f8be7a7c216ecee1b77f06536afd8a9315ea1d91e5d68fedcbe22cfcf4f43ce.css" />
+<link rel="stylesheet" media="print" href="/assets/print-93ba201ca3a4808a0854ed49a126c4d89cafbdbbc80a31d2c3653c2f231caf4b.css" />
+<script src="/assets/application-5402fd780c2c8dc0138e0b9d40aa7e5f12d8699e5bac12aafda0fc80d06c3ae1.js"></script>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="+4o1hYHYUnYTp+v4xT5qfwFmF12ha5yP2aWz80URibF84+kqs1Md40kbZiAZ4uZWmUVWgnNo3d8xxU+n58cIkg==" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--[if lt IE 10]>
+  <meta HTTP-EQUIV="REFRESH" content="0; url=/ie_redirect.html">
+<![endif]-->
+
+
+<script>
+  var _paq = _paq || [];
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwikext.qualcomm.com/piwik/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "17"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+</head>
+
+<body class='ui_gray project' data-no-turbolink data-page='projects:blob:show' data-project-id='660980' data-user-ip='199.106.114.10' data-user='123995'>
+<script type="text/javascript">
+//<![CDATA[
+window.gon={};gon.api_version="v3";gon.relative_url_root="";gon.default_avatar_url="https://chipcode.qti.qualcomm.com/assets/no_avatar-531f287a2db0647896e36ab0084aff2e8b56564eb6f150b51dd5934d2fd4130d.png";gon.sudo_user=null;gon.internal_user=false;gon.current_user_id=123995;gon.api_token="ZQNw6zKiUpdNnS3dEQk8";gon.project_id=660980;
+//]]>
+</script>
+
+
+<header class='navbar navbar-static-top navbar-gitlab'>
+<div class='navbar-inner'>
+<div class='container'>
+<div class='app_logo'>
+<span class='separator'></span>
+<a class="home has_bottom_tooltip" title="Dashboard" href="/"><h1>ChipCode</h1>
+</a><span class='separator'></span>
+</div>
+<div class='navbar-collapse collapse'>
+<ul class='nav navbar-nav'>
+<li>
+<a class='turbolink-spinner' style='font-size:160%;color:#eee;display:none'>
+<i class='fa fa-refresh fa fa-spin'></i>
+</a>
+</li>
+<li>
+<a id='external-search-icon'>
+<i class='search'></i>
+</a>
+</li>
+<li class='favorites-dropdown'>
+<a class='has_bottom_tooltip' data-original-title='' data-toggle='dropdown' href='#' title='Starred Projects'>
+<i class='favorites'></i>
+</a>
+<ul class='dropdown-menu'>
+</ul>
+
+</li>
+<li>
+<a title="Help" class="has_bottom_tooltip" data-original-title="Help" href="/helpki"><i class='help'></i>
+</a></li>
+<li class='user-download-link'>
+<a title="Available Downloads" class="has_bottom_tooltip" data-original-title="Available Downloads" href="/users_downloads"><i class='downloads'></i>
+</a></li>
+<li>
+<a title="Profile settings" class="has_bottom_tooltip" data-original-title="Profile settings" href="/profile"><i class='user'></i>
+</a></li>
+<li>
+<a title="Logout" class="has_bottom_tooltip logout" data-original-title="Logout" rel="nofollow" data-method="delete" href="/sign_out_qc"><i class='sign-out'></i>
+</a></li>
+</ul>
+</div>
+</div>
+</div>
+</header>
+
+<script>
+  GitLab.GfmAutoComplete.dataSource = "/sony-mobile-communications-inc/snapdragon-premium-high-2021-spf-2-0_amss_standard_oem/autocomplete_sources?type=NilClass&amp;type_id=r2.0.r1_00018.0.531685.0.566789.0%2FLA.QSSI.13.0%2FLINUX%2Fandroid%2Fvendor%2Fqcom%2Fproprietary%2Fprebuilt_HY11%2Ftarget%2Fproduct%2Fqssi%2Fsystem_ext%2Flib64%2Flibmsp.so"
+  GitLab.GfmAutoComplete.setup();
+</script>
+
+<div class='flash-container'>
+</div>
+
+<nav class='main-nav navbar-collapse collapse'>
+<div class='container'><span data-val='AMSS' id='distro-type'></span>
+<ul>
+<li class="active"><a href="/sony-mobile-communications-inc/snapdragon-premium-high-2021-spf-2-0_amss_standard_oem/tree/r2.0.r1_00018.0.531685.0.566789.0">Files</a>
+</li><li class=""><a class='compare-link'>Compare</a>
+</li><li class=""><a href="/sony-mobile-communications-inc/snapdragon-premium-high-2021-spf-2-0_amss_standard_oem/commits/r2.0.r1_00018.0.531685.0.566789.0">Commits</a>
+</li><li class=""><a href="/sony-mobile-communications-inc/snapdragon-premium-high-2021-spf-2-0_amss_standard_oem/network/r2.0.r1_00018.0.531685.0.566789.0">History</a>
+</li><li class="home"><a title="Project" href="/sony-mobile-communications-inc/snapdragon-premium-high-2021-spf-2-0_amss_standard_oem">Activities</a>
+</li><li class=""><a href="/sony-mobile-communications-inc/snapdragon-premium-high-2021-spf-2-0_amss_standard_oem/about/r2.0.r1_00018.0.531685.0.566789.0">About</a>
+</li></ul>
+</div>
+</nav>
+<div class='fixed-nav-buffer wrapper'>
+<div class='container content'>
+<div class='row project-body'><div class='tree-ref-holder'>
+<form class="project-refs-form" style="margin-top: 10px;" action="/sony-mobile-communications-inc/snapdragon-premium-high-2021-spf-2-0_amss_standard_oem/refs/switch" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<select name="ref" id="ref" class="project-refs-select select2 select2-sm tree-base-ref" style="width:178px"><optgroup label="Branches"><option value="S494168">S494168</option>
+<option value="S496658">S496658</option>
+<option value="S504800">S504800</option>
+<option value="S507320">S507320</option>
+<option value="S508352">S508352</option>
+<option value="S512741">S512741</option>
+<option value="S515914">S515914</option>
+<option value="S518755">S518755</option>
+<option value="S518851">S518851</option>
+<option value="S519142">S519142</option>
+<option value="S520900">S520900</option>
+<option value="S522835">S522835</option>
+<option value="S526297">S526297</option>
+<option value="S526297.0.531685">S526297.0.531685</option>
+<option value="S526297.0.540599">S526297.0.540599</option>
+<option value="S530248">S530248</option>
+<option value="S530248.0.534149">S530248.0.534149</option>
+<option value="S530686">S530686</option>
+<option value="S531685.0.537731">S531685.0.537731</option>
+<option value="S531685.0.543458">S531685.0.543458</option>
+<option value="S531685.0.553859">S531685.0.553859</option>
+<option value="S531685.0.563687">S531685.0.563687</option>
+<option value="S531685.0.564383">S531685.0.564383</option>
+<option value="S531685.0.564572">S531685.0.564572</option>
+<option value="S531685.0.566789">S531685.0.566789</option>
+<option value="S534149.0.564317">S534149.0.564317</option>
+<option value="S563687.0.564746">S563687.0.564746</option>
+<option value="S564746.0.565670">S564746.0.565670</option>
+<option value="485261">485261</option>
+<option value="master">master</option></optgroup><optgroup label="Tags"><option value="r2.0_00032.0">r2.0_00032.0</option>
+<option value="r2.0.r1_00036.0">r2.0.r1_00036.0</option>
+<option value="r2.0.r1_00035.0">r2.0.r1_00035.0</option>
+<option value="r2.0.r1_00031.0">r2.0.r1_00031.0</option>
+<option value="r2.0.r1_00029.0">r2.0.r1_00029.0</option>
+<option value="r2.0.r1_00028.0">r2.0.r1_00028.0</option>
+<option value="r2.0.r1_00027.0">r2.0.r1_00027.0</option>
+<option value="r2.0.r1_00026.0">r2.0.r1_00026.0</option>
+<option value="r2.0.r1_00025.0">r2.0.r1_00025.0</option>
+<option value="r2.0.r1_00023.0">r2.0.r1_00023.0</option>
+<option value="r2.0.r1_00022.0">r2.0.r1_00022.0</option>
+<option value="r2.0.r1_00021.0">r2.0.r1_00021.0</option>
+<option value="r2.0.r1_00019.0">r2.0.r1_00019.0</option>
+<option value="r2.0.r1_00018.0.564746.0.565670.0">r2.0.r1_00018.0.564746.0.565670.0</option>
+<option value="r2.0.r1_00018.0.563687.0.564746.0">r2.0.r1_00018.0.563687.0.564746.0</option>
+<option value="r2.0.r1_00018.0.534149.0.564317.0">r2.0.r1_00018.0.534149.0.564317.0</option>
+<option selected="selected" value="r2.0.r1_00018.0.531685.0.566789.0">r2.0.r1_00018.0.531685.0.566789.0</option>
+<option value="r2.0.r1_00018.0.531685.0.564572.1">r2.0.r1_00018.0.531685.0.564572.1</option>
+<option value="r2.0.r1_00018.0.531685.0.564572.0">r2.0.r1_00018.0.531685.0.564572.0</option>
+<option value="r2.0.r1_00018.0.531685.0.564383.0">r2.0.r1_00018.0.531685.0.564383.0</option>
+<option value="r2.0.r1_00018.0.531685.0.563687.0">r2.0.r1_00018.0.531685.0.563687.0</option>
+<option value="r2.0.r1_00018.0.531685.0.553859.0">r2.0.r1_00018.0.531685.0.553859.0</option>
+<option value="r2.0.r1_00018.0.531685.0.543458.1">r2.0.r1_00018.0.531685.0.543458.1</option>
+<option value="r2.0.r1_00018.0.531685.0.543458.0">r2.0.r1_00018.0.531685.0.543458.0</option>
+<option value="r2.0.r1_00018.0.531685.0.537731.0">r2.0.r1_00018.0.531685.0.537731.0</option>
+<option value="r2.0.r1_00018.0.530686.0">r2.0.r1_00018.0.530686.0</option>
+<option value="r2.0.r1_00018.0.530248.0.534149.0">r2.0.r1_00018.0.530248.0.534149.0</option>
+<option value="r2.0.r1_00018.0.530248.0">r2.0.r1_00018.0.530248.0</option>
+<option value="r2.0.r1_00018.0.526297.0.540599.0">r2.0.r1_00018.0.526297.0.540599.0</option>
+<option value="r2.0.r1_00018.0.526297.0.531685.0">r2.0.r1_00018.0.526297.0.531685.0</option>
+<option value="r2.0.r1_00018.0.526297.0">r2.0.r1_00018.0.526297.0</option>
+<option value="r2.0.r1_00018.0.522835.0">r2.0.r1_00018.0.522835.0</option>
+<option value="r2.0.r1_00018.0.520900.1">r2.0.r1_00018.0.520900.1</option>
+<option value="r2.0.r1_00018.0.520900.0">r2.0.r1_00018.0.520900.0</option>
+<option value="r2.0.r1_00018.0">r2.0.r1_00018.0</option>
+<option value="r2.0.r1_00016.0.519142.0">r2.0.r1_00016.0.519142.0</option>
+<option value="r2.0.r1_00016.0.518851.0">r2.0.r1_00016.0.518851.0</option>
+<option value="r2.0.r1_00016.0.518755.0">r2.0.r1_00016.0.518755.0</option>
+<option value="r2.0.r1_00016.0.515914.0">r2.0.r1_00016.0.515914.0</option>
+<option value="r2.0.r1_00016.0">r2.0.r1_00016.0</option>
+<option value="r2.0.r1_00015.0">r2.0.r1_00015.0</option>
+<option value="r2.0.r1_00014.0">r2.0.r1_00014.0</option>
+<option value="r2.0.r1_00013.0">r2.0.r1_00013.0</option>
+<option value="r2.0.r1_00012.0.512741.0">r2.0.r1_00012.0.512741.0</option>
+<option value="r2.0.r1_00012.0.508352.0">r2.0.r1_00012.0.508352.0</option>
+<option value="r2.0.r1_00012.0">r2.0.r1_00012.0</option>
+<option value="r2.0.r1_00011.0.507320.0">r2.0.r1_00011.0.507320.0</option>
+<option value="r2.0.r1_00011.0.504800.0">r2.0.r1_00011.0.504800.0</option>
+<option value="r2.0.r1_00011.0">r2.0.r1_00011.0</option>
+<option value="r2.0.r1_00010.0">r2.0.r1_00010.0</option>
+<option value="r2.0.r1_00009.0">r2.0.r1_00009.0</option>
+<option value="r2.0.r1_00008.0.496658.0">r2.0.r1_00008.0.496658.0</option>
+<option value="r2.0.r1_00008.0.494168.1">r2.0.r1_00008.0.494168.1</option>
+<option value="r2.0.r1_00008.0.494168.0">r2.0.r1_00008.0.494168.0</option>
+<option value="r2.0.r1_00008.0">r2.0.r1_00008.0</option>
+<option value="r2.0.r1_00007.0">r2.0.r1_00007.0</option>
+<option value="r2.0.r1_00006.0.485261.0">r2.0.r1_00006.0.485261.0</option>
+<option value="r2.0.r1_00006.0">r2.0.r1_00006.0</option>
+<option value="r2.0.r1_00003.0">r2.0.r1_00003.0</option>
+<option value="r2.0.r1_00002.0">r2.0.r1_00002.0</option></optgroup></select>
+<input type="hidden" name="destination" id="destination" value="blob" />
+<input type="hidden" name="path" id="path" value="LA.QSSI.13.0/LINUX/android/vendor/qcom/proprietary/prebuilt_HY11/target/product/qssi/system_ext/lib64/libmsp.so" />
+</form>
+
+
+</div>
+<div class='tree-holder' id='tree-holder'>
+<ul class='breadcrumb'>
+<li>
+<i class='fa fa-angle-right'></i>
+<a href="/sony-mobile-communications-inc/snapdragon-premium-high-2021-spf-2-0_amss_standard_oem/tree/r2.0.r1_00018.0.531685.0.566789.0">snapdragon-premium-high-2021-spf-2-0_amss_standard_oem
+</a></li>
+<li>
+<a href="#">..</a>
+</li>
+<li>
+<a href="/sony-mobile-communications-inc/snapdragon-premium-high-2021-spf-2-0_amss_standard_oem/tree/r2.0.r1_00018.0.531685.0.566789.0/LA.QSSI.13.0/LINUX/android/vendor/qcom/proprietary/prebuilt_HY11/target/product/qssi/system_ext/lib64">lib64</a>
+</li>
+<li>
+<a href="/sony-mobile-communications-inc/snapdragon-premium-high-2021-spf-2-0_amss_standard_oem/tree/r2.0.r1_00018.0.531685.0.566789.0/LA.QSSI.13.0/LINUX/android/vendor/qcom/proprietary/prebuilt_HY11/target/product/qssi/system_ext/lib64/libmsp.so">libmsp.so</a>
+</li>
+</ul>
+<ul class='blob-commit-info bs-callout bs-callout-info hidden-xs'>
+<li class='commit js-toggle-container'>
+<div class='commit-row-title'>
+<span class='str-truncated'>
+<a class="commit-row-message" href="/sony-mobile-communications-inc/snapdragon-premium-high-2021-spf-2-0_amss_standard_oem/tree/b06c9d593cd0a16f914521fd1ae82e9f56f4c87b">Commit label r2.0.r1_00018.0.531685.0.566789.0 - N/A 0.0.018.0.531685.0.566789.0</a>
+<a class='text-expander js-toggle-button'>...</a>
+</span>
+<a class="pull-right" href="/sony-mobile-communications-inc/snapdragon-premium-high-2021-spf-2-0_amss_standard_oem/tree/r2.0.r1_00018.0.531685.0.566789.0">Browse Code »</a>
+<div class='notes_count'></div>
+</div>
+<div class='commit-row-description js-toggle-content'>
+<p>
+TRACKING-ID:ed0af917-c87c-4536-93c2-49d2fca3553c</p>
+</div>
+<div class='commit-row-info'>
+<a class="commit-author-link has_tooltip" data-original-title="qcpublisher@qti.qualcomm.com" href="mailto:qcpublisher@qti.qualcomm.com"><img class="avatar s16" width="16" alt="" src="/assets/no_avatar-531f287a2db0647896e36ab0084aff2e8b56564eb6f150b51dd5934d2fd4130d.png" /> <span class="commit-author-name">QC Publisher</span></a>
+<div class='committed_ago'>
+<time class='time_ago' data-placement='top' data-toggle='tooltip' datetime='2023-02-08T05:43:34Z' title='Feb 07, 2023 9:43pm'>2023-02-07 21:43:34 -0800</time>
+<script>
+  $('.time_ago').timeago().tooltip()
+</script>
+ &nbsp;
+</div>
+</div>
+</li>
+
+</ul>
+<div class='tree-content-holder' id='tree-content-holder'>
+<article class='file-holder'>
+<div class='file-title clearfix'>
+<i class='fa fa-file'></i>
+<span class='file_name'>
+libmsp.so
+<small>15.2 MB</small>
+</span>
+<span class='options hidden-xs'><div class='btn-group tree-btn-group'>
+<a class="btn btn-small" target="_blank" href="/sony-mobile-communications-inc/snapdragon-premium-high-2021-spf-2-0_amss_standard_oem/raw/r2.0.r1_00018.0.531685.0.566789.0/LA.QSSI.13.0/LINUX/android/vendor/qcom/proprietary/prebuilt_HY11/target/product/qssi/system_ext/lib64/libmsp.so">raw</a>
+<a class="btn btn-small" href="/sony-mobile-communications-inc/snapdragon-premium-high-2021-spf-2-0_amss_standard_oem/commits/r2.0.r1_00018.0.531685.0.566789.0/LA.QSSI.13.0/LINUX/android/vendor/qcom/proprietary/prebuilt_HY11/target/product/qssi/system_ext/lib64/libmsp.so">history</a>
+</div>
+</span>
+</div>
+<div class='file-content blob_file blob-no-preview'>
+<div class='center'>
+<a href="/sony-mobile-communications-inc/snapdragon-premium-high-2021-spf-2-0_amss_standard_oem/raw/r2.0.r1_00018.0.531685.0.566789.0/LA.QSSI.13.0/LINUX/android/vendor/qcom/proprietary/prebuilt_HY11/target/product/qssi/system_ext/lib64/libmsp.so"><h1 class='light'>
+<i class='fa fa-download-alt'></i>
+</h1>
+<h4>
+Download (15.2 MB)
+</h4>
+</a></div>
+</div>
+
+</article>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<footer class='site-footer'>
+<div class='container'>
+<div class='logo-footer-wrap'>
+<div class='logo-footer'></div>
+</div>
+</div>
+<div class='container'>
+<small>© 2023 Qualcomm Technologies, Inc. and/or its affiliated companies.</small>
+<br>
+<br>
+<small><p>References to "Qualcomm" may mean Qualcomm Incorporated, or subsidiaries or business units within the Qualcomm corporate structure, as applicable.</p>
+<p>Qualcomm Incorporated includes Qualcomm's licensing business, QTL, and the vast majority of its patent portfolio. Qualcomm Technologies, Inc., a wholly-owned subsidiary of Qualcomm Incorporated, operates, along with its subsidiaries, substantially all of Qualcomm's engineering, research and development functions, and substantially all of its products and services businesses. Qualcomm products referenced herein are products of Qualcomm Technologies, Inc. and/or its subsidiaries.</p></small>
+<small>"Version: v13.0.10. Server-d8-a43d48cf49045c859cd005babddbe52f"</small>
+</div>
+</footer>
+
+</body>
+</html>

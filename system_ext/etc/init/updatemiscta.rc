@@ -1,0 +1,8 @@
+on early-boot
+    start updatemiscta
+
+service updatemiscta /system_ext/bin/updatemiscta
+    user oem_2991
+    group oem_2993 system
+    seclabel u:r:updatemiscta:s0
+    oneshot

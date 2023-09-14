@@ -1,0 +1,324 @@
+/* Common styling for the mobile web guide */
+html,body,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,div,blockquote,table,caption,.p {
+   font-family: 'Roboto Regular','Helvetica neue', Helvetica, Arial, Tahoma, Verdana, sans-serif;
+   color: rgba(0,0,0,0.87);
+}
+body {
+   margin-bottom: 30px;
+}
+div>a {
+   display: block;
+   font-family: 'Roboto Regular', 'Helvetica neue', Helvetica, Arial, Tahoma, Verdana;
+   font-size: 16px;      
+   margin-left: 8px;
+   border-top: 1px;
+   border-top-color: whitesmoke;
+   border-top-style: solid;
+   padding-top: 16px;
+   padding-bottom: 20px;
+   padding-left: 10px;
+   text-decoration: none;
+   color: rgba(0,0,0,0.87);
+}
+
+html[dir="rtl"] div>a {
+   background-position-x: 5%;
+   padding-left: 40px;
+   padding-right: 10px;
+}
+
+html[dir="rtl"]>a {
+   /*background: whitesmoke;*/
+   
+}
+
+div>a:visited {
+   color: black;
+}
+
+div>a[href="no-title.html"] {
+   display: none;
+}
+a {
+   color: #2aabe4;
+}
+
+a:visited {
+   color: #2aabe4;
+}
+
+h1>img {
+   margin-right: 5px;
+   display: block;
+   float: left;
+   margin-top: 3px;
+}
+
+html[dir="rtl"] h1>img {
+   margin-left: 5px;
+   float: right;
+}
+
+ul {
+   padding-left: 18px;
+}
+
+html[dir="rtl"] ul {
+   padding-right: 18px;
+}
+
+span>img {
+   padding-right: 9px;
+   margin-top: 5px;
+   vertical-align: sub;
+}
+
+html[dir="rtl"] span>img {
+   padding-right: 0px;
+   padding-left: 9px;
+}
+
+div>p>img {
+   display: block;
+   float: left;
+   margin-right: 10px;
+}
+
+html[dir="rtl"] div>p>img {
+   display: block;
+   float: right;
+   margin-left: 10px;
+}
+
+tt,code,span.system,pre,span.label {
+   font-weight: bold;
+}
+
+/* Styling for the notes image */
+td.image {
+   vertical-align: top;
+   text-align: center;
+}
+
+div.note {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+div.note p.note {
+	margin-top : 14px;
+	margin-bottom : 0px;
+	padding-bottom: 6px;
+}
+
+div.note p.note span {
+	border-style: solid;
+	border-width : 1px;
+	border-radius : 5px;
+	padding: 3px 3.5px 4px 3.5px;
+	font-size: 11px;
+	font-weight: bold;
+	border-color: #cc0000;
+}
+
+div.note p.text {
+	margin-top : 0px;
+	margin-bottom : 14px;
+	padding-bottom: 0px;
+}
+
+td div.note p {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+td div.note:first-child p.note {
+	margin-top : 0px;
+}
+
+td div.note:last-child p.text {
+	margin-bottom : 0px;
+}
+
+span.keep-together {
+   white-space: nowrap;
+}
+
+span.bold {
+   font-weight: bold;
+}
+
+html,body,h5,h6,p,dl,dt,dd,div,blockquote,table,caption,pre.long,input {
+   font-size: 14px;
+   line-height: 20px;
+}
+
+.p {
+   margin-top: 15px;
+   margin-left: 8px;
+}
+
+tt,code,span.system,pre {
+   font-size: 20px;
+}
+
+p {
+   margin-left: 8px;
+}
+
+element {
+  --screenres: 1;
+}
+
+.header {
+   display: block;
+   
+   font-size: 23px;
+   font-weight:bold;
+   height: 36px;
+   margin: 0.0em;
+   margin-bottom: 0.5em;
+   padding-top:15px;
+   padding-left:15px;
+   padding-bottom:1px;
+}
+
+html[dir="rtl"] h1:before {
+  
+   background-position-x: 98%;
+}
+
+h1 { 
+   margin: -8px;
+   margin-bottom: 1px;
+   font-size: 24px;
+   line-height: 32px;
+   font-weight: normal;
+   padding: 0.5em;
+   padding-top: 10px;
+   padding-bottom: 0px;
+   padding-left: 0.5em;
+   padding-right: 0.5em;
+}
+
+h2 {
+   margin-top: 35px;
+   font-size: 20px;
+   font-weight: normal;
+   padding-left: 0.5em;
+}
+
+h3,h4 {
+   margin-top: 30px;
+   font-size: 16px;
+   font-weight: medium;
+   padding-left: 0.5em;
+}
+
+h1.tasktitle,h2.tasktitle,h3.tasktitle,h4.tasktitle {
+   margin-top: 30px;
+   font-size: 20px;
+}
+
+em {
+   font-weight: inherit;
+}
+
+b,caption,th,th p,p.title {
+   font-weight: bold;
+}
+
+p.first_index_term {
+   
+}
+
+td {
+   vertical-align: top;
+}
+
+td p {
+   margin: 2px;
+   padding-top: 0px;
+   margin-top: 0px;
+   padding-bottom: 0px;
+   margin-bottom: 0px;
+}
+
+table {
+   empty-cells: show;
+   margin-top: 1em;
+   margin-bottom: 1em;
+   vertical-align: text-top;
+}
+
+div.prevnext {
+   margin-top: 30px;
+}
+
+html,body,h1,h2,h3,h4,h5,h6 {
+   display: block;
+}
+
+tt,i,b,em,code,a,img,span {
+   display: inline;
+}
+
+pre,pre.long {
+   white-space: pre;
+}
+
+img {
+   border-style: none;
+}
+
+em.uicontrol {
+   font-weight: normal;
+   font-style: italic;
+}
+
+hr {
+   margin: 0px 0 20px 0;
+   border: solid 0px black;
+}
+
+tr.odd {
+   background-color: #E3E4E4;
+}
+
+/* Navigation buttons */
+#tabs ul li {
+   padding: 0;
+   display: inline;
+   text-align: center;
+   list-style: none;
+}
+
+#tabs li a,#tabs li.active {
+   white-space: nowrap;
+   line-height: 200%;
+   color: black;
+   background-color: #E3E4E4;
+   border: 1px outset;
+   padding: 3px;
+   text-decoration: none;
+   display: inline;
+}
+
+#tabs li.active {
+   color: white;
+   background-color: black;
+}
+
+#tabs li a:hover {
+   color: white;
+   background-color: black;
+}
+
+a.result,span.current {
+   margin-left: 6px;
+   margin-right: 6px;
+}
+
+div.result {
+   text-align: center;
+}

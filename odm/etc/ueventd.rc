@@ -1,0 +1,25 @@
+# SOMC specific ODM ueventd configuration
+
+# Charger
+/sys/class/battchg_ext usb_input_suspend 0664 root root
+/sys/class/battchg_ext lrc_charge_disable 0664 root root
+/sys/class/battchg_ext lrc_input_suspend 0664 root root
+/sys/class/battchg_ext batt_aging_level 0664 root root
+/sys/class/battchg_ext bootup_shutdown_phase 0664 root root
+/sys/class/battchg_ext system_temp_level 0664 root root
+
+/sys/class/battman_dbg log_interval 0664 root root
+/sys/class/battman_dbg log_categories 0664 root root
+/sys/class/battman_dbg log_level 0664 root root
+/sys/class/battman_dbg regupdate_interval 0664 root root
+
+# smart_charging
+/sys/class/battchg_ext smart_charging_activation 0644 system system
+/sys/class/battchg_ext smart_charging_interruption 0644 system system
+
+# Touchscreen
+/sys/devices/virtual/sec/tsp module_id 0644 system system
+/sys/devices/virtual/sec/tsp cmd 0600 system system
+
+# Fingerprint sensor
+/dev/esfp0 0600 system system

@@ -1,0 +1,7 @@
+# Start usbeng
+service usbeng /system_ext/bin/usbeng
+    user root
+    group root radio
+    class late_start
+    oneshot
+    seclabel u:r:usbeng:s0

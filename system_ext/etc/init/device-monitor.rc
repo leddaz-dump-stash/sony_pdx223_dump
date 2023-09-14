@@ -1,0 +1,9 @@
+# Copyright (C) 2020 Sony Mobile Communications Inc.
+
+on post-fs
+    # panel ID
+    chown system system /sys/devices/dsi_panel_driver/panel_id
+    chmod 0444 /sys/devices/dsi_panel_driver/panel_id
+
+    #area_count
+    chmod 0444 /sys/devices/dsi_panel_driver/area_count

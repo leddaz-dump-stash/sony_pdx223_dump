@@ -1,0 +1,8 @@
+on post-fs-data
+    # mount LTA-Label here as from Kitakami the mount path is changed.
+    mkdir /mnt/lta-label 0555 system system
+    wait /dev/block/bootdevice/by-name/LTALabel
+    mount ext4 /dev/block/bootdevice/by-name/LTALabel /mnt/lta-label nosuid nodev noatime noexec barrier=0
+    chown system sdcard_rw /mnt/lta-label
+    chmod 0755 /mnt/lta-label
+    restorecon_recursive /mnt/lta-label

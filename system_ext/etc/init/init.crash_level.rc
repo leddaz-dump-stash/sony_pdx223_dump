@@ -1,0 +1,3 @@
+on post-fs-data
+    # Script for setting crash level.
+    exec u:r:crash_level:s0 -- /system/bin/sh /system_ext/etc/init.crash_level.sh

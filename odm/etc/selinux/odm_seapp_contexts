@@ -1,0 +1,4 @@
+user=_app seinfo=platform name=jp.co.sony.threesixtyra.system isPrivApp=true domain=threesixtyra_app type=app_data_file
+user=_app seinfo=platform name=jp.co.sony.mc.tgpaserver domain=tgpaserver_app type=app_data_file levelFrom=all
+user=_app seinfo=platform name=jp.co.sony.mc.multicoreoptimizer domain=multicoreoptimizer_app type=app_data_file levelFrom=all
+user=_app seinfo=network_visualizer name=jp.co.sony.mc.networkvisualizer* domain=network_visualizer_app type=app_data_file levelFrom=user

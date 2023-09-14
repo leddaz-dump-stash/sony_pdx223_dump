@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2021 Sony Corporation
+  -->
+<exceptions>
+    <exception package="jp.co.sony.threesixtyra.system">
+        <!-- Used to monitor A2DP connection event -->
+        <permission name="android.permission.BLUETOOTH_CONNECT" fixed="false"/>
+    </exception>
+</exceptions>

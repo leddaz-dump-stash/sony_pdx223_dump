@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <hidden-api-whitelisted-app package="com.altice.android.myapps"/>
+    <hidden-api-whitelisted-app package="com.facebook.appmanager"/>
+    <hidden-api-whitelisted-app package="com.facebook.services"/>
+    <hidden-api-whitelisted-app package="com.facebook.system"/>
+    <hidden-api-whitelisted-app package="com.sfr.android.sfrjeux"/>
+    <hidden-api-whitelisted-app package="com.sonymobile.gameenhancer.browser"/>
+    <hidden-api-whitelisted-app package="com.sonymobile.launcher"/>
+</config>

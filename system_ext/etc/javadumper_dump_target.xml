@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ramdump_target>
+    <section src="executable">
+        <scn_type>TLCORE_SECTION_TYPE_TEXT</scn_type>
+        <scn_data_type>TLCORE_DATA_TYPE_ZLIB</scn_data_type>
+        <scn_data_fmt>TLCORE_DATA_FORMAT_STRAIGHT</scn_data_fmt>
+        <name>property.log</name>
+        <command>/system/bin/getprop</command>
+    </section>
+</ramdump_target>

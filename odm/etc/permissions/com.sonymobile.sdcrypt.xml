@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2022 Sony Corporation.
+-->
+<!-- This flag is used to indicate that Settings does not support sdcrypt UI. -->
+<permissions>
+    <feature name="com.sonymobile.feature.disable.sdcrypt.ui" />
+</permissions>

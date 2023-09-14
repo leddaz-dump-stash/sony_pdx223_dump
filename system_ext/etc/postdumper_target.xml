@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ramdump_target>
+        <section src="file">
+                <scn_type>TLCORE_SECTION_TYPE_TEXT</scn_type>
+                <scn_attribute>
+                        <bitmask>TLCORE_SECTION_ATTRIBUTE_REPORT</bitmask>
+                </scn_attribute>
+                <scn_data_type>TLCORE_DATA_TYPE_ZLIB</scn_data_type>
+                <scn_data_fmt>TLCORE_DATA_FORMAT_STRAIGHT</scn_data_fmt>
+                <name>kernel.log</name>
+                <path>/data/system/log/kernel/console-ramoops-0</path>
+        </section>
+        <section src="file">
+                <scn_type>TLCORE_SECTION_TYPE_BIN</scn_type>
+                <scn_attribute>
+                        <bitmask>TLCORE_SECTION_ATTRIBUTE_REPORT</bitmask>
+                </scn_attribute>
+                <scn_data_type>TLCORE_DATA_TYPE_ZLIB</scn_data_type>
+                <scn_data_fmt>TLCORE_DATA_FORMAT_STRAIGHT</scn_data_fmt>
+                <name>PMIC_PON.BIN</name>
+                <path>/proc/last_logs/PMIC_PON</path>
+        </section>
+        <section src="file">
+                <scn_type>TLCORE_SECTION_TYPE_BIN</scn_type>
+                <scn_attribute>
+                        <bitmask>TLCORE_SECTION_ATTRIBUTE_REPORT</bitmask>
+                </scn_attribute>
+                <scn_data_type>TLCORE_DATA_TYPE_ZLIB</scn_data_type>
+                <scn_data_fmt>TLCORE_DATA_FORMAT_STRAIGHT</scn_data_fmt>
+                <name>RST_STAT.BIN</name>
+                <path>/proc/last_logs/RST_STAT</path>
+        </section>
+        <section src="file">
+                <scn_type>TLCORE_SECTION_TYPE_TEXT</scn_type>
+                <scn_attribute>
+                        <bitmask>TLCORE_SECTION_ATTRIBUTE_REPORT</bitmask>
+                </scn_attribute>
+                <scn_data_type>TLCORE_DATA_TYPE_ZLIB</scn_data_type>
+                <scn_data_fmt>TLCORE_DATA_FORMAT_STRAIGHT</scn_data_fmt>
+                <name>tzbsp.log</name>
+                <path>/proc/last_logs/tzbsp_log</path>
+        </section>
+        <section src="file">
+                <scn_type>TLCORE_SECTION_TYPE_BIN</scn_type>
+                <scn_attribute>
+                        <bitmask>TLCORE_SECTION_ATTRIBUTE_REPORT</bitmask>
+                </scn_attribute>
+                <scn_data_type>TLCORE_DATA_TYPE_ZLIB</scn_data_type>
+                <scn_data_fmt>TLCORE_DATA_FORMAT_STRAIGHT</scn_data_fmt>
+                <name>reset_reason.bin</name>
+                <path>/proc/last_logs/reset_reason</path>
+        </section>
+        <section src="file">
+                <scn_type>TLCORE_SECTION_TYPE_BIN</scn_type>
+                <scn_attribute>
+                        <bitmask>TLCORE_SECTION_ATTRIBUTE_REPORT</bitmask>
+                </scn_attribute>
+                <scn_data_type>TLCORE_DATA_TYPE_ZLIB</scn_data_type>
+                <scn_data_fmt>TLCORE_DATA_FORMAT_STRAIGHT</scn_data_fmt>
+                <name>CODERAM.BIN</name>
+                <path>/proc/last_logs/CODERAM.BIN</path>
+        </section>
+        <section src="file">
+                <scn_type>TLCORE_SECTION_TYPE_BIN</scn_type>
+                <scn_attribute>
+                        <bitmask>TLCORE_SECTION_ATTRIBUTE_REPORT</bitmask>
+                </scn_attribute>
+                <scn_data_type>TLCORE_DATA_TYPE_ZLIB</scn_data_type>
+                <scn_data_fmt>TLCORE_DATA_FORMAT_STRAIGHT</scn_data_fmt>
+                <name>DATARAM.BIN</name>
+                <path>/proc/last_logs/DATARAM.BIN</path>
+        </section>
+        <section src="file">
+                <scn_type>TLCORE_SECTION_TYPE_BIN</scn_type>
+                <scn_attribute>
+                        <bitmask>TLCORE_SECTION_ATTRIBUTE_REPORT</bitmask>
+                </scn_attribute>
+                <scn_data_type>TLCORE_DATA_TYPE_ZLIB</scn_data_type>
+                <scn_data_fmt>TLCORE_DATA_FORMAT_STRAIGHT</scn_data_fmt>
+                <name>MSGRAM0.BIN</name>
+                <path>/proc/last_logs/MSGRAM0.BIN</path>
+        </section>
+        <section src="file">
+                <scn_type>TLCORE_SECTION_TYPE_BIN</scn_type>
+                <scn_attribute>
+                        <bitmask>TLCORE_SECTION_ATTRIBUTE_REPORT</bitmask>
+                </scn_attribute>
+                <scn_data_type>TLCORE_DATA_TYPE_ZLIB</scn_data_type>
+                <scn_data_fmt>TLCORE_DATA_FORMAT_STRAIGHT</scn_data_fmt>
+                <name>MSGRAM1.BIN</name>
+                <path>/proc/last_logs/MSGRAM1.BIN</path>
+        </section>
+        <section src="file">
+                <scn_type>TLCORE_SECTION_TYPE_BIN</scn_type>
+                <scn_attribute>
+                        <bitmask>TLCORE_SECTION_ATTRIBUTE_REPORT</bitmask>
+                </scn_attribute>
+                <scn_data_type>TLCORE_DATA_TYPE_ZLIB</scn_data_type>
+                <scn_data_fmt>TLCORE_DATA_FORMAT_STRAIGHT</scn_data_fmt>
+                <name>MSGRAM2.BIN</name>
+                <path>/proc/last_logs/MSGRAM2.BIN</path>
+        </section>
+        <section src="file">
+                <scn_type>TLCORE_SECTION_TYPE_BIN</scn_type>
+                <scn_attribute>
+                        <bitmask>TLCORE_SECTION_ATTRIBUTE_REPORT</bitmask>
+                </scn_attribute>
+                <scn_data_type>TLCORE_DATA_TYPE_ZLIB</scn_data_type>
+                <scn_data_fmt>TLCORE_DATA_FORMAT_STRAIGHT</scn_data_fmt>
+                <name>MSGRAM3.BIN</name>
+                <path>/proc/last_logs/MSGRAM3.BIN</path>
+        </section>
+        <section src="file">
+                <scn_type>TLCORE_SECTION_TYPE_BIN</scn_type>
+                <scn_attribute>
+                        <bitmask>TLCORE_SECTION_ATTRIBUTE_REPORT</bitmask>
+                </scn_attribute>
+                <scn_data_type>TLCORE_DATA_TYPE_ZLIB</scn_data_type>
+                <scn_data_fmt>TLCORE_DATA_FORMAT_STRAIGHT</scn_data_fmt>
+                <name>MSGRAM4.BIN</name>
+                <path>/proc/last_logs/MSGRAM4.BIN</path>
+        </section>
+        <section src="file">
+                <scn_type>TLCORE_SECTION_TYPE_BIN</scn_type>
+                <scn_attribute>
+                        <bitmask>TLCORE_SECTION_ATTRIBUTE_REPORT</bitmask>
+                </scn_attribute>
+                <scn_data_type>TLCORE_DATA_TYPE_ZLIB</scn_data_type>
+                <scn_data_fmt>TLCORE_DATA_FORMAT_STRAIGHT</scn_data_fmt>
+                <name>MSGRAM5.BIN</name>
+                <path>/proc/last_logs/MSGRAM5.BIN</path>
+        </section>
+        <section src="file">
+                <scn_type>TLCORE_SECTION_TYPE_BIN</scn_type>
+                <scn_attribute>
+                        <bitmask>TLCORE_SECTION_ATTRIBUTE_REPORT</bitmask>
+                </scn_attribute>
+                <scn_data_type>TLCORE_DATA_TYPE_ZLIB</scn_data_type>
+                <scn_data_fmt>TLCORE_DATA_FORMAT_STRAIGHT</scn_data_fmt>
+                <name>MSGRAM6.BIN</name>
+                <path>/proc/last_logs/MSGRAM6.BIN</path>
+        </section>
+        <section src="file">
+                <scn_type>TLCORE_SECTION_TYPE_BIN</scn_type>
+                <scn_attribute>
+                        <bitmask>TLCORE_SECTION_ATTRIBUTE_REPORT</bitmask>
+                </scn_attribute>
+                <scn_data_type>TLCORE_DATA_TYPE_ZLIB</scn_data_type>
+                <scn_data_fmt>TLCORE_DATA_FORMAT_STRAIGHT</scn_data_fmt>
+                <name>MSGRAM7.BIN</name>
+                <path>/proc/last_logs/MSGRAM7.BIN</path>
+        </section>
+        <section src="file">
+                <scn_type>TLCORE_SECTION_TYPE_BIN</scn_type>
+                <scn_attribute>
+                        <bitmask>TLCORE_SECTION_ATTRIBUTE_REPORT</bitmask>
+                </scn_attribute>
+                <scn_data_type>TLCORE_DATA_TYPE_ZLIB</scn_data_type>
+                <scn_data_fmt>TLCORE_DATA_FORMAT_STRAIGHT</scn_data_fmt>
+                <name>MSGRAM8.BIN</name>
+                <path>/proc/last_logs/MSGRAM8.BIN</path>
+        </section>
+        <section src="file">
+                <scn_type>TLCORE_SECTION_TYPE_BIN</scn_type>
+                <scn_attribute>
+                        <bitmask>TLCORE_SECTION_ATTRIBUTE_REPORT</bitmask>
+                </scn_attribute>
+                <scn_data_type>TLCORE_DATA_TYPE_ZLIB</scn_data_type>
+                <scn_data_fmt>TLCORE_DATA_FORMAT_STRAIGHT</scn_data_fmt>
+                <name>MSGRAM9.BIN</name>
+                <path>/proc/last_logs/MSGRAM9.BIN</path>
+        </section>
+        <section src="file">
+                <scn_type>TLCORE_SECTION_TYPE_BIN</scn_type>
+                <scn_attribute>
+                        <bitmask>TLCORE_SECTION_ATTRIBUTE_REPORT</bitmask>
+                </scn_attribute>
+                <scn_data_type>TLCORE_DATA_TYPE_ZLIB</scn_data_type>
+                <scn_data_fmt>TLCORE_DATA_FORMAT_STRAIGHT</scn_data_fmt>
+                <name>MSGRAM10.BIN</name>
+                <path>/proc/last_logs/MSGRAM10.BIN</path>
+        </section>
+        <section src="file">
+                <scn_type>TLCORE_SECTION_TYPE_BIN</scn_type>
+                <scn_attribute>
+                        <bitmask>TLCORE_SECTION_ATTRIBUTE_REPORT</bitmask>
+                </scn_attribute>
+                <scn_data_type>TLCORE_DATA_TYPE_ZLIB</scn_data_type>
+                <scn_data_fmt>TLCORE_DATA_FORMAT_STRAIGHT</scn_data_fmt>
+                <name>MSGRAM11.BIN</name>
+                <path>/proc/last_logs/MSGRAM11.BIN</path>
+        </section>
+        <section src="file">
+                <scn_type>TLCORE_SECTION_TYPE_BIN</scn_type>
+                <scn_attribute>
+                        <bitmask>TLCORE_SECTION_ATTRIBUTE_REPORT</bitmask>
+                </scn_attribute>
+                <scn_data_type>TLCORE_DATA_TYPE_ZLIB</scn_data_type>
+                <scn_data_fmt>TLCORE_DATA_FORMAT_STRAIGHT</scn_data_fmt>
+                <name>MSGRAM12.BIN</name>
+                <path>/proc/last_logs/MSGRAM12.BIN</path>
+        </section>
+        <section src="file">
+                <scn_type>TLCORE_SECTION_TYPE_BIN</scn_type>
+                <scn_attribute>
+                        <bitmask>TLCORE_SECTION_ATTRIBUTE_REPORT</bitmask>
+                </scn_attribute>
+                <scn_data_type>TLCORE_DATA_TYPE_ZLIB</scn_data_type>
+                <scn_data_fmt>TLCORE_DATA_FORMAT_STRAIGHT</scn_data_fmt>
+                <name>MSGRAM13.BIN</name>
+                <path>/proc/last_logs/MSGRAM13.BIN</path>
+        </section>
+        <section src="file">
+                <scn_type>TLCORE_SECTION_TYPE_BIN</scn_type>
+                <scn_attribute>
+                        <bitmask>TLCORE_SECTION_ATTRIBUTE_REPORT</bitmask>
+                </scn_attribute>
+                <scn_data_type>TLCORE_DATA_TYPE_ZLIB</scn_data_type>
+                <scn_data_fmt>TLCORE_DATA_FORMAT_STRAIGHT</scn_data_fmt>
+                <name>MSGRAM14.BIN</name>
+                <path>/proc/last_logs/MSGRAM14.BIN</path>
+        </section>
+        <section src="file">
+                <scn_type>TLCORE_SECTION_TYPE_BIN</scn_type>
+                <scn_attribute>
+                        <bitmask>TLCORE_SECTION_ATTRIBUTE_REPORT</bitmask>
+                </scn_attribute>
+                <scn_data_type>TLCORE_DATA_TYPE_ZLIB</scn_data_type>
+                <scn_data_fmt>TLCORE_DATA_FORMAT_STRAIGHT</scn_data_fmt>
+                <name>MSGRAM15.BIN</name>
+                <path>/proc/last_logs/MSGRAM15.BIN</path>
+        </section>
+        <section src="file">
+                <scn_type>TLCORE_SECTION_TYPE_TEXT</scn_type>
+                <scn_attribute>
+                        <bitmask>TLCORE_SECTION_ATTRIBUTE_REPORT</bitmask>
+                </scn_attribute>
+                <scn_data_type>TLCORE_DATA_TYPE_ZLIB</scn_data_type>
+                <scn_data_fmt>TLCORE_DATA_FORMAT_STRAIGHT</scn_data_fmt>
+                <name>boot_xblramdump.log</name>
+                <path>/proc/last_logs/sbl1_ddr_logs</path>
+        </section>
+</ramdump_target>

@@ -1,0 +1,27 @@
+on init
+    chmod 0664 /proc/rdtag
+    chown root system /proc/rdtag
+
+on late-init
+    mkdir /mnt/tmp 0775
+    mount tmpfs tmpfs /mnt/tmp nosuid mode=0775,uid=0,gid=0
+
+on post-fs-data
+    # Create directory to store logs
+    mkdir /data/system/log 0770 root system
+    chown root system /data/system/log
+    chmod 0770 /data/system/log
+    mkdir /data/system/log/kernel 0770 root system
+    copy /sys/fs/pstore/console-ramoops-0 /data/system/log/kernel/console-ramoops-0
+    chmod 0640 /data/system/log/kernel/console-ramoops-0
+    copy /mnt/vendor/persist/time/ats_1 /data/system/log/ats_1
+    chmod 0640 /data/system/log/ats_1
+    copy /sys/fs/pstore/pmsg-ramoops-1 /data/system/log/kernel/pmsg-ramoops-1
+    chmod 0640 /data/system/log/kernel/pmsg-ramoops-1
+    mkdir /data/system/log/dropboxfiles 0770 root system
+
+    # Create directory for partial dump
+    mkdir /data/crashdata 0770 root oem_2999
+    restorecon_recursive --force /data/crashdata/
+    trigger partial_dump_dir_complete
+

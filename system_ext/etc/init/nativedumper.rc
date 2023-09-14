@@ -1,0 +1,24 @@
+on post-fs-data
+    # create nd_tsfiles from rc file
+    mkdir /data/system/log/nd_tsfiles 0700 system root
+    chown system root /data/system/log/nd_tsfiles
+    chmod 700 /data/system/log/nd_tsfiles
+    # create nd_pkginfo from rc file
+    mkdir /data/system/log/nd_pkginfo 0770 system root
+
+on property:vendor.crashdump.packageinfo=true
+    start nd_abx2xml_exec
+
+# NativeDumper
+service nativedumper /system_ext/bin/nativedumper
+    class core
+    user system
+    group root system oem_2999 radio
+    seclabel u:r:nativedumper:s0
+
+service nd_abx2xml_exec /system/bin/sh /system/bin/abx2xml /data/system/packages.xml /data/system/log/nd_pkginfo/packages.xml
+    oneshot
+    disabled
+    user system
+    group root system oem_2999
+    seclabel u:r:nativedumper:s0

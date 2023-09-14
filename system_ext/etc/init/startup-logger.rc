@@ -1,0 +1,13 @@
+# SONY: Startup Logger
+service startup-logger /system_ext/bin/startup-logger
+   class late_start
+   user oem_2987
+   group system root oem_2993
+   oneshot
+   seclabel u:r:startup-logger:s0
+
+on property:sys.boot_completed=1
+    # First we need to stop the service so that logging is stopped as well
+    stop startup-logger
+    # Start again the service to remove logs
+    start startup-logger

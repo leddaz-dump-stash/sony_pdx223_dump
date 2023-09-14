@@ -1,0 +1,2 @@
+libMiscTAApi.sony.so
+libifaateeclientjni.sony.so
