@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<Config type="panel" version="1.0">
+  <Mode name="USER_SETTING_OFF" fps_mode="100" frameskip="60"  overdrive="-1" hmd = "0" min_fps="60"  max_fps="60" /> 
+  <Mode name="USER_SETTING_ON"  fps_mode="101" frameskip="120" overdrive="-1" hmd = "0" min_fps="60"  max_fps="120" />
+  <Mode name="REDUCED_LOW"      fps_mode="1"   frameskip="15"  overdrive="-1" hmd = "0" min_fps="60"  max_fps="60" />
+  <Mode name="REDUCED"          fps_mode="2"   frameskip="40"  overdrive="-1" hmd = "0" min_fps="60"  max_fps="60" />
+  <Mode name="NORMAL"           fps_mode="3"   frameskip="60"  overdrive="-1" hmd = "0" min_fps="60"  max_fps="60" />
+  <Mode name="MEDIUM"           fps_mode="4"   frameskip="120" overdrive="-1" hmd = "0" min_fps="120" max_fps="120" />
+  <Mode name="HIGH"             fps_mode="5"   frameskip="120" overdrive="-1" hmd = "0" min_fps="120" max_fps="120" />
+  <Mode name="TURBO"            fps_mode="6"   frameskip="120" overdrive="-1" hmd = "1" min_fps="120" max_fps="120" />
+  <Mode name="TUBO_VR"          fps_mode="7"   frameskip="120" overdrive="-1" hmd = "2" min_fps="120" max_fps="120" />
+</Config>

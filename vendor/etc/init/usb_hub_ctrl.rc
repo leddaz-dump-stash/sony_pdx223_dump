@@ -1,0 +1,19 @@
+################################################################################
+#
+# Copyright 2022 Sony Corporation
+#
+# usb_hub_ctrl.rc
+#
+
+#----------------------------------------------------------
+# usb port1 power off
+#----------------------------------------------------------
+on property:vendor.usb.usb_hub_ctrl=setsus
+    exec u:r:su:s0 -- /system/bin/ifconfig eth0 down
+    exec -- /vendor/bin/usb_hub_ctrl 2 1 1 poff
+
+#----------------------------------------------------------
+# usb port1 power on
+#----------------------------------------------------------
+on property:vendor.usb.usb_hub_ctrl=clrsus
+    exec -- /vendor/bin/usb_hub_ctrl 2 1 1 pon

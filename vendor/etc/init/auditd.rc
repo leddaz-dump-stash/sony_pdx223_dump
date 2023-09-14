@@ -1,0 +1,8 @@
+service auditd /vendor/bin/auditd
+    class core
+    group system root
+    writepid /dev/cpuset/system-background/tasks
+    oneshot
+
+
+

@@ -1,0 +1,8 @@
+# Copyright 2021 Sony Corporation.
+# All rights, including trade secret rights, reserved.
+
+# start ifaa service
+service vendor.semc.hardware.ifaa-1-0 /vendor/bin/hw/vendor.semc.hardware.ifaa@1.0-service
+    class hal
+    user system
+    group system

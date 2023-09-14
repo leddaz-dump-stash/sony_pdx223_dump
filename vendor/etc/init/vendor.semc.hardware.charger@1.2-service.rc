@@ -1,0 +1,4 @@
+service vendor.semc.hardware.charger-1-2 /vendor/bin/hw/vendor.semc.hardware.charger@1.2-service
+    class hal
+    user oem_2995
+    group system root oem_2993

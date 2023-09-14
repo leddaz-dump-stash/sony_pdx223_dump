@@ -1,0 +1,7 @@
+service tgpa_boost_hal_service /vendor/bin/hw/vendor.somc.hardware.tgpa_boost@1.0-service
+    interface vendor.somc.hardware.tgpa_boost@1.0::ITgpaBoost default
+    class hal
+    user system
+    group system
+    oneshot
+    capabilities SYS_NICE

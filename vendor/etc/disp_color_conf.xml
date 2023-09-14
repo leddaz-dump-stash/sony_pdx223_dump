@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!--
+    enum ColorConfigMode {
+        INVALID = -1,
+        DEFAULT = 0,
+        CREATOR = 1,
+        STANDARD = 2,
+        ENHANCED = 3
+    };
+
+    enum sspp_color_mode {
+        SSPP_MODE_CREATOR = 0,
+        SSPP_MODE_STANDARD,
+        SSPP_MODE_EXTENSION_A,
+        SSPP_MODE_EXTENSION_B,
+    };
+
+    enum ColorMode : int32_t {
+        CGAMUT_MODE_CREATOR,
+        CGAMUT_MODE_STANDARD,
+    };
+-->
+
+<Config type="color" version="1.0">
+    <Mode mode_id="1"  name="MODE_CREATOR"     parent_id="1" renderintent="0" sspp_mode="0" wb_mode="0" in_normal="1" in_provisional="2" in_overwrite="1" />
+    <Mode mode_id="2"  name="MODE_STANDARD"    parent_id="2" renderintent="3" sspp_mode="1" wb_mode="1" in_normal="1" in_provisional="1" in_overwrite="1" />
+<!--
+    <Mode mode_id="3"  name="MODE_ENHANCED"    parent_id="2" renderintent="256" sspp_mode="1" wb_mode="1" in_normal="0" in_provisional="2" in_overwrite="1" />
+-->
+    <Mode mode_id="10" name="MODE_EXTENSION_A" parent_id="1" renderintent="0" sspp_mode="2" wb_mode="0" in_normal="0" in_provisional="0" in_overwrite="1" />
+    <Mode mode_id="11" name="MODE_EXTENSION_B" parent_id="1" renderintent="0" sspp_mode="3" wb_mode="0" in_normal="0" in_provisional="0" in_overwrite="1" />
+    <Mode mode_id="12" name="MODE_STANDARD_EXT_A" parent_id="2" renderintent="257" sspp_mode="1" wb_mode="1" in_normal="0" in_provisional="0" in_overwrite="1" />
+    <Mode mode_id="13" name="MODE_STANDARD_EXT_B" parent_id="2" renderintent="258" sspp_mode="1" wb_mode="1" in_normal="0" in_provisional="0" in_overwrite="1" />
+    <Mode mode_id="14" name="MODE_GAME"        parent_id="1" renderintent="259" sspp_mode="0" wb_mode="0" in_normal="0" in_provisional="0" in_overwrite="1" />
+    <Mode mode_id="15" name="MODE_GAME_EXT_A"  parent_id="1" renderintent="260" sspp_mode="0" wb_mode="0" in_normal="0" in_provisional="0" in_overwrite="1" />
+    <Mode mode_id="16" name="MODE_GAME_EXT_B"  parent_id="1" renderintent="261" sspp_mode="0" wb_mode="0" in_normal="0" in_provisional="0" in_overwrite="1" />
+    <Mode mode_id="17" name="MODE_VR"  parent_id="2" renderintent="262" sspp_mode="1" wb_mode="1" in_normal="0" in_provisional="0" in_overwrite="1" />
+</Config>

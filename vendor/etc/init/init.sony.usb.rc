@@ -1,0 +1,67 @@
+################################################################################
+#
+# Copyright 2021 Sony Corporation
+#
+# init.sony.usb.rc
+#
+# This is script to initilize SOMC USB compositions and support UsbGadgetHal
+# in case configfs value is 2.
+#
+# configfs:1
+#  SOMC USB power-off charging(on charger) is supported.
+#
+# configfs:2
+#  SOMC USB compositions are supported in UsbGadgetHal.
+
+on boot
+    write /config/usb_gadget/g1/functions/mass_storage.0/lun.0/cdrom 1
+    write /config/usb_gadget/g1/functions/mass_storage.0/lun.0/nofua 1
+    write /config/usb_gadget/g1/functions/mass_storage.0/lun.0/removable 1
+    write /config/usb_gadget/g1/functions/mass_storage.0/lun.0/ro 1
+    write /config/usb_gadget/g1/strings/0x409/manufacturer ${ro.product.manufacturer}
+    write /config/usb_gadget/g1/strings/0x409/product ${ro.product.model}
+
+    # Diable USB autosuspend to avoid xHCI host not responding to stop endpoint issue
+    write /sys/module/usbcore/parameters/autosuspend -1
+
+#----------------------------------------------------------
+# USB Mode : mass_storage_charge (power-off charging)
+# VID      : 0x0fce
+# PID      : 0xeeee
+#----------------------------------------------------------
+on property:sys.usb.config=none && property:ro.bootmode=charger
+    setprop sys.usb.config mass_storage_charge
+
+on property:sys.usb.config=adb && property:ro.bootmode=charger
+    setprop sys.usb.config mass_storage_charge
+
+on property:sys.usb.config=mass_storage_charge && property:sys.usb.configfs=1
+    write /config/usb_gadget/g1/configs/b.1/strings/0x409/configuration "msc_chg"
+    rm /config/usb_gadget/g1/configs/b.1/f1
+    rm /config/usb_gadget/g1/configs/b.1/f2
+    rm /config/usb_gadget/g1/configs/b.1/f3
+    rm /config/usb_gadget/g1/configs/b.1/f4
+    rm /config/usb_gadget/g1/configs/b.1/f5
+    rm /config/usb_gadget/g1/configs/b.1/f6
+    rm /config/usb_gadget/g1/configs/b.1/f7
+    rm /config/usb_gadget/g1/configs/b.1/f8
+    rm /config/usb_gadget/g1/configs/b.1/f9
+    write /config/usb_gadget/g1/strings/0x409/manufacturer ${ro.product.manufacturer}
+    write /config/usb_gadget/g1/strings/0x409/product ${ro.product.model}
+    write /config/usb_gadget/g1/idVendor 0x0fce
+    write /config/usb_gadget/g1/idProduct 0xeeee
+    write /config/usb_gadget/g1/os_desc/use 0
+    symlink /config/usb_gadget/g1/functions/mass_storage.0 /config/usb_gadget/g1/configs/b.1/f1
+    write /config/usb_gadget/g1/UDC ${sys.usb.controller}
+    setprop sys.usb.state mass_storage
+
+
+################################################################################
+# SOMC USB Eng Mode
+#  To pass eng mode to UsbGadgetHal , set vendor.usb.config as "somc_eng_mode".
+
+on property:persist.usb.eng=1 && property:vendor.usb.config=adb && property:sys.usb.configfs=2
+    setprop vendor.usb.config somc_eng_mode,adb
+
+on property:persist.usb.eng=0 && property:vendor.usb.config=somc_eng_mode,adb && property:sys.usb.configfs=2
+    setprop vendor.usb.config adb

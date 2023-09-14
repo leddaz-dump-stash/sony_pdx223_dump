@@ -1,0 +1,19 @@
+service lotadebug /vendor/bin/lota
+    class main
+    user root
+    group root system
+    writepid /dev/cpuset/system-background/tasks
+    disabled
+
+service lotauser /vendor/bin/lota
+    class main
+    user nobody
+    writepid /dev/cpuset/system-background/tasks
+    disabled
+
+on property:ro.debuggable=1
+    start lotadebug
+
+on property:ro.debuggable=0
+    start lotauser
+

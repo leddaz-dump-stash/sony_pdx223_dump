@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2021 Sony Corporation
+-->
+<!-- This is a feature flag to identify SONY devices with VR capability. -->
+<permissions>
+    <feature name="com.sonymobile.vr" />
+</permissions>
+

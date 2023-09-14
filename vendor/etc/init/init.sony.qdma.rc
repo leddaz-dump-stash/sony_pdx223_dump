@@ -1,0 +1,3 @@
+on boot
+    # Set property to opt-out from collection
+    setprop vendor.qti.qcc.oper.mode 2

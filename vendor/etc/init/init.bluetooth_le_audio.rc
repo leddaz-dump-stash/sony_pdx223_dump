@@ -1,0 +1,5 @@
+on boot
+    # Set property to enable BT LE Audio for T-OSV
+    setprop persist.vendor.service.bt.adv_audio_mask 7
+    # Set property to support TMAP_CALL and TMAP_MEDIA for T-OSV
+    setprop persist.vendor.qcom.bluetooth.default_profiles 14840
